@@ -1,34 +1,10 @@
-import Layout from "../components/organisms/layout/layout"
+import Card from "../components/molecules/card/card";
+import Layout from "../components/organisms/layout/layout";
 
 export default function Home() {
-  return (
-    <Layout>
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-      <div>1</div> 
-    </Layout>
-  )
+  return <Layout>
+    <Card />
+    <Card />
+    <Card />
+  </Layout>;
 }

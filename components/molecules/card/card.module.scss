@@ -1,0 +1,62 @@
+.cardContainer {
+  display: inline-block;
+  position: relative;
+  margin: 20px;
+}
+
+.card {
+  height: 200px;
+  width: 120px;
+  background-color: lightcyan;
+  position: relative;
+  transition: transform 0.7s ease;
+  border-radius: 5px;
+
+  &:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+
+    + .cardBG:before {
+      transform: translateY(-5px) rotate(1deg);
+    }
+
+    + .cardBG:after {
+      transform: translateY(-3px) rotate(2deg);
+    }
+  }
+}
+
+.cardBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  &:before {
+    content: "";
+    z-index: -1;
+    display: block;
+    position: relative;
+    width: 120px;
+    height: 200px;
+    background-color: black;
+    top: 5px;
+    left: 5px;
+    transition: transform 0.9s ease;
+    border-radius: 5px;
+  }
+
+  &:after {
+    content: "";
+    z-index: -2;
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    background-color: red;
+    top: 9px;
+    left: 9px;
+    transition: transform 1.1s ease;
+    border-radius: 5px;
+  }
+}

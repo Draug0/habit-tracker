@@ -7,7 +7,21 @@
 }
 
 .main {
-  margin-top: 37px;
+  margin-top: 3rem;
   position: absolute;
   width: 100%;
+  height: max-content(100%, auto);
+}
+
+.footer {
+  margin-top: 4rem;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 5vh;
+  width: 100%;
+  z-index: 2;
+  background-image: radial-gradient(#ED7D3A 2px, transparent 2px);
+  background-size: 16px 16px;
+  background-color: #f0ebd8;
 }

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .container {
   display: block;
   position: static;
@@ -8,16 +10,13 @@
 
 .main {
   margin-top: 3rem;
-  position: absolute;
+
   width: 100%;
-  height: max-content(100%, auto);
+  min-height: 100vh;
 }
 
 .footer {
-  margin-top: 4rem;
   display: block;
-  position: absolute;
-  bottom: 0;
   height: 5vh;
   width: 100%;
   z-index: 2;

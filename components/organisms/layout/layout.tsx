@@ -7,10 +7,11 @@ export default function Layout({ children }) {
       <header>
         <Navbar />
       </header>
+
       <main className={styles.main}>
         <div className={styles.container}>{children}</div>
-        <footer className={styles.footer}></footer>
       </main>
+      <footer className={styles.footer}></footer>
     </>
   );
 }

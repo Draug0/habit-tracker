@@ -3,14 +3,13 @@
 .container {
   display: block;
   position: static;
-  width: 80vw;
-  margin: 0 auto;
-  padding: 0.5rem 2rem;
+  width: 100%;
 }
 
 .main {
   margin-top: 3rem;
-
+  padding-bottom: 3rem;
+  background-color: #f0ebd8;
   width: 100%;
   min-height: 100vh;
 }

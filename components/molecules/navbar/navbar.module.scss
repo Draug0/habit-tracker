@@ -16,7 +16,7 @@ $neutral: #171A21;
 }
 
 .container {
-  width: 80vw;
+  width: 60vw;
   margin: auto auto;
   margin: 0;
   display: flex;
@@ -40,11 +40,11 @@ $neutral: #171A21;
   li {
     margin: 3px 5px;
     border-bottom: 3px solid $neutral;
-    transition: border 1s ease;
-    
+    transition: border 0.7s ease;
+    font-size: 1.1rem;
 
     &:hover {
-      border-bottom: 3px solid red;
+      border-bottom: 3px solid #ED7D3A;
     }
   }
 
